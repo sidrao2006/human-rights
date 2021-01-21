@@ -16,7 +16,7 @@ class UNDeclarations
   }>
   implements Section {
   state = {
-    shouldPlayVideo: false,
+    hideText: false,
   };
 
   targetId = "un-declarations-text";
@@ -24,20 +24,22 @@ class UNDeclarations
   render() {
     return (
       <LazyLoader
-        backgroundImageSrc={ImageSources.unDeclarations.source}
+        backgroundImageSrc=""
         backgroundImageAlt={ImageSources.unDeclarations.alternateText}
         id="un_declarations"
         className="dark section-content-container"
         backgroundImageStyle={{
           objectFit: "contain",
         }}
-        shouldUseCustomBackground={this.state.shouldPlayVideo}
+        shouldUseCustomBackground={true}
         customBackground={style => (
           <video
-            src="./videos/un-declaration-learn-more.mp4"
+            title={ImageSources.unDeclarationsSecondBg.alternateText}
+            src={ImageSources.unDeclarationsSecondBg.source}
             preload="auto"
             autoPlay
             loop
+            controls={this.state.hideText}
             muted
             style={{
               top: "0px",
@@ -47,7 +49,7 @@ class UNDeclarations
           ></video>
         )}
       >
-        {!this.state.shouldPlayVideo ? (
+        {!this.state.hideText ? (
           <div>
             <div id={this.targetId}>
               <h3 className="display-3">{TextSources.unDeclarations.header}</h3>
@@ -71,9 +73,9 @@ class UNDeclarations
                 bottom: "5%",
                 right: "5%",
               }}
-              onClick={() => this.setState({ shouldPlayVideo: true })}
+              onClick={() => this.setState({ hideText: true })}
             >
-              Learn More
+              Hide Text
             </Button>
           </div>
         ) : null}
