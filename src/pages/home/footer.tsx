@@ -1,4 +1,5 @@
 import React from "react";
+import ImageSources from "./utils/image_sources";
 
 class Footer extends React.Component {
   render() {
@@ -32,8 +33,8 @@ class Footer extends React.Component {
 
         <a href="https://github.com/sidrao2006/human-rights">
           <img
-            src="./images/github-mark.png"
-            alt="Github mark"
+            src={ImageSources.githubMark.source}
+            alt={ImageSources.githubMark.alternateText}
             height="16px"
             style={{
               position: "absolute",
