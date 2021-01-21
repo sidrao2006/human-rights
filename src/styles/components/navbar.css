@@ -1,0 +1,35 @@
+.sideNav {
+    /* Keep the NavBar fixed to the side */
+    position: fixed;
+
+    /* Vertically center NavBar items */
+    justify-content: center;
+
+    z-index: 1;
+
+    min-width: 13%;
+    max-width: 15%;
+
+    /*
+    Make the NavBar take up the entire screen height
+    without being displayed horizontally 
+    */
+    min-height: 100%;
+
+    /* 
+    Background blur effect. saturate() increases saturation
+     to balance the distortion due to blurring
+     */
+    backdrop-filter: blur(15px) saturate(135%);
+    transition: all 0.5s ease-in-out;
+}
+
+.sideNav:hover {
+    background: rgba(255,255,255, 0.1);
+}
+
+@media only screen and (max-width: 768px) {
+    .sideNav {
+        display: none;
+    }
+}
