@@ -1,0 +1,56 @@
+:root {
+    --nav-item-color: white;
+    --nav-item-color-dark: #222222;
+}
+
+a.navLink {
+    margin: auto 0;
+}
+
+a.navLink span {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    padding-top: 5px;
+    color: var(--nav-item-color);
+}
+
+a.navLink::before {
+    content: "";
+    display: block;
+    border-radius: 1px;
+    width: 35%;
+    height: 1px;
+    background-color: var(--nav-item-color);
+    transition: all 0.3s ease-in-out;
+}
+
+a.navLink:hover span{
+    opacity: 1;
+}
+
+a.navLink:hover::before {
+    height: 4px;
+    width: 70%;
+}
+
+a.navLink.active span {
+    opacity: 1;
+}
+
+a.navLink.active {
+    transition: margin 0.1s ease-in-out;
+    margin-bottom: 40%;
+}
+
+a.navLink.active::before {
+    height: 4px;
+    width: 70%;
+}
+
+a.navLink.dark span {
+    color: var(--nav-item-color-dark) !important;
+}
+
+a.navLink.dark::before {
+    background-color: var(--nav-item-color-dark) !important;
+}

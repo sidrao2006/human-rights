@@ -1,0 +1,15 @@
+.light {
+    color: white;
+}
+.dark {
+    color: #222222;
+}
+
+.section-content-container {
+    height: inherit;
+}
+
+.section-content-container p {
+    vertical-align: middle;
+    font-size: 1.25em;
+}
