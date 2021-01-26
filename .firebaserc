@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "human-rights-c0fb8"
+  },
+  "targets": {
+    "human-rights-c0fb8": {
+      "hosting": {
+        "production": [
+          "humanrights"
+        ]
+      }
+    }
   }
 }
