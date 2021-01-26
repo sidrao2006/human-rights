@@ -1,10 +1,13 @@
 import React from "react";
 
-import ErrorBoundary from "components/error_boundary";
 import TextSources from "./utils/text_sources";
-import { TargetLabelContent } from "components/wrapper_gen";
 
-import "styles/pages/home/sections.css";
+import type { TargetLabelContent } from "components/wrapper_gen";
+
+import "bootstrap/dist/css/bootstrap.css";
+import "css/pages/home/sections.css";
+
+import ErrorBoundary from "components/error_boundary";
 
 const NavBar = React.lazy(() => import("components/navbar"));
 const Row = React.lazy(() => import("react-bootstrap/Row"));

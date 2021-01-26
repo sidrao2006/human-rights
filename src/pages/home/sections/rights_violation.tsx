@@ -4,8 +4,7 @@ import LazyLoader from "components/lazy_loader";
 
 import ImageSources from "../utils/image_sources";
 import TextSources from "../utils/text_sources";
-import $ from "../utils/jquery_mock";
-import Section from "../utils/section";
+import type Section from "../utils/section";
 
 const Button = React.lazy(() => import("react-bootstrap/Button"));
 
@@ -42,7 +41,7 @@ class RightsViolation extends React.Component implements Section {
         className="light section-content-container"
       >
         {!this.state.shouldPlayVideo ? (
-          <div>
+          <>
             <div id={this.targetId}>
               <h3 className="display-3">
                 {TextSources.rightsViolation.header}
@@ -78,21 +77,22 @@ class RightsViolation extends React.Component implements Section {
                 #BlackLivesMatter
               </Button>
             </div>
-          </div>
+          </>
         ) : null}
       </LazyLoader>
     );
   }
 
   componentDidMount() {
-    Array.from($(`#${this.targetId}`)?.children!).forEach((value, index) =>
-      import("components/text_enter_tween").then(({ setTextEnterTween }) =>
-        setTextEnterTween({
-          targetId: this.targetId,
-          element: value,
-          index: index,
-        })
-      )
+    Array.from(document.getElementById(this.targetId)?.children!).forEach(
+      (value, index) =>
+        import("components/text_enter_tween").then(({ setTextEnterTween }) =>
+          setTextEnterTween({
+            targetId: this.targetId,
+            element: value,
+            index: index,
+          })
+        )
     );
   }
 }

@@ -1,5 +1,5 @@
 interface Section {
-    targetId: string;
+  targetId: string;
 }
 
-export default Section;
+export type { Section as default };

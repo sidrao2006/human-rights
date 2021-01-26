@@ -1,7 +1,7 @@
 import React from "react";
 import ErrorBoundary from "components/error_boundary";
 import NavLink from "components/nav_link";
-import "styles/components/navbar.css";
+import "css/components/navbar.css";
 
 const Nav = React.lazy(() => import("react-bootstrap/Nav"));
 

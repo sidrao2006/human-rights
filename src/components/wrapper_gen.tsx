@@ -23,10 +23,11 @@ interface Props {
   items: TargetLabelContent[];
 }
 
-export interface TargetLabelContent {
+interface TargetLabelContent {
   target: string;
   label: string;
   content: JSX.Element;
 }
 
+export type { TargetLabelContent };
 export default WrapperGen;
