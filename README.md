@@ -1,5 +1,7 @@
 # human-rights
 
+![Deploy to Firebase Hosting on merge](https://github.com/sidrao2006/human-rights/workflows/Deploy%20to%20Firebase%20Hosting%20on%20merge/badge.svg?branch=production)
+
 An open source project to portray the importance and need for human rights.
 
 _Built with ReactJS_
