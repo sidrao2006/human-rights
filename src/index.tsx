@@ -1,12 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+
 import HomePage from "./pages/home/home";
+
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
+
+import "./index.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <HomePage />;
+    <HomePage />
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -4,8 +4,7 @@ import LazyLoader from "components/lazy_loader";
 
 import ImageSources from "../utils/image_sources";
 import TextSources from "../utils/text_sources";
-import $ from "../utils/jquery_mock";
-import Section from "../utils/section";
+import type Section from "../utils/section";
 
 class Why extends React.Component implements Section {
   targetId = "why-text";
@@ -40,14 +39,15 @@ class Why extends React.Component implements Section {
   }
 
   componentDidMount() {
-    Array.from($(`#${this.targetId}`)?.children!).forEach((value, index) =>
-      import("components/text_enter_tween").then(({ setTextEnterTween }) =>
-        setTextEnterTween({
-          targetId: this.targetId,
-          element: value,
-          index: index,
-        })
-      )
+    Array.from(document.getElementById(this.targetId)?.children!).forEach(
+      (value, index) =>
+        import("components/text_enter_tween").then(({ setTextEnterTween }) =>
+          setTextEnterTween({
+            targetId: this.targetId,
+            element: value,
+            index: index,
+          })
+        )
     );
   }
 }

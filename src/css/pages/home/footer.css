@@ -1,0 +1,7 @@
+footer, footer a:link, footer a:visited {
+    color: #515154;
+}
+
+h6, footer a:hover, footer a:active {
+    color: #1d1d1f;
+}

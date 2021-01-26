@@ -1,7 +1,7 @@
 import React from "react";
 import ErrorBoundary from "components/error_boundary";
 import { ScrollLink } from "react-scroll";
-import "styles/components/nav_link.css";
+import "css/components/nav_link.css";
 
 const Link = React.lazy(() => import("react-bootstrap/NavLink"));
 

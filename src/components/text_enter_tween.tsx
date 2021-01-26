@@ -27,9 +27,11 @@ async function setTextEnterTween(props: {
       scrollTrigger: {
         trigger: `#${props.targetId}`,
         scrub: props.syncToScroll ?? true,
-        toggleActions: "play reset play reset",
-        start: props.start,
-        end: props.end ?? "bottom top",
+        toggleActions: !props.syncToScroll
+          ? "play reset play reset"
+          : undefined,
+        start: props.start ?? "top bottom",
+        end: props.end ?? "top top",
       },
     }
   );

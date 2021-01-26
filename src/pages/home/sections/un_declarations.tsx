@@ -4,8 +4,7 @@ import LazyLoader from "../../../components/lazy_loader";
 
 import ImageSources from "../utils/image_sources";
 import TextSources from "../utils/text_sources";
-import $ from "../utils/jquery_mock";
-import Section from "../utils/section";
+import type Section from "../utils/section";
 
 const Button = React.lazy(() => import("react-bootstrap/Button"));
 
@@ -50,7 +49,7 @@ class UNDeclarations
         )}
       >
         {!this.state.hideText ? (
-          <div>
+          <>
             <div id={this.targetId}>
               <h3 className="display-3">{TextSources.unDeclarations.header}</h3>
 
@@ -77,7 +76,7 @@ class UNDeclarations
             >
               Hide Text
             </Button>
-          </div>
+          </>
         ) : null}
       </LazyLoader>
     );
@@ -93,7 +92,7 @@ class UNDeclarations
       )
     );
 
-    Array.from($(`#${this.targetId}`)?.children ?? [])?.forEach(
+    Array.from(document.getElementById(this.targetId)?.children ?? [])?.forEach(
       (value, index) =>
         import("components/text_enter_tween").then(({ setTextEnterTween }) =>
           setTextEnterTween({

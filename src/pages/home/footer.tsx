@@ -1,12 +1,14 @@
 import React from "react";
+
 import ImageSources from "./utils/image_sources";
+
+import "css/pages/home/footer.css";
 
 class Footer extends React.Component {
   render() {
     return (
       <footer
         style={{
-          color: "#515154",
           fontSize: "12px",
           fontWeight: 400,
           padding: "1%",
@@ -14,7 +16,7 @@ class Footer extends React.Component {
           backgroundColor: "#f5f5f7",
         }}
       >
-        <h6 style={{ color: "#1d1d1f" }}>{"Attributions and Credits"}</h6>
+        <h6>{"Attributions and Credits"}</h6>
         {"Webpage designed and developed by "}
         <a href="https://github.com/sidrao2006" title="Aneesh Rao">
           {"Aneesh Rao"}
@@ -30,6 +32,15 @@ class Footer extends React.Component {
         </a>
         <hr />
         {"Copyright © 2021 Aneesh Rao. All rights reserved."}
+
+        <a
+          href="https://github.com/sidrao2006/human-rights/blob/v1/LICENSE"
+          style={{
+            margin: "0 10%",
+          }}
+        >
+          License
+        </a>
 
         <a href="https://github.com/sidrao2006/human-rights">
           <img
