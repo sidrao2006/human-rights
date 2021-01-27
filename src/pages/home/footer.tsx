@@ -34,7 +34,7 @@ class Footer extends React.Component {
         {"Copyright © 2021 Aneesh Rao. All rights reserved."}
 
         <a
-          href="https://cdn.jsdelivr.net/gh/sidrao2006/human-rights@1.0/LICENSE"
+          href="https://cdn.jsdelivr.net/gh/sidrao2006/human-rights@1/LICENSE"
           style={{
             margin: "0 10%",
           }}
