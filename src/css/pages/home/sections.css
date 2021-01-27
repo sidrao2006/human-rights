@@ -7,9 +7,16 @@
 
 .section-content-container {
     height: inherit;
+    padding-left: 5%;
 }
 
 .section-content-container p {
     vertical-align: middle;
     font-size: 1.25em;
+}
+
+@media only screen and (min-width: 768px) {
+    .section-content-container {
+        padding-left: 17%;
+    }
 }
