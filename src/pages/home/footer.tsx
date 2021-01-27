@@ -8,12 +8,12 @@ class Footer extends React.Component {
   render() {
     return (
       <footer
+        className="section-content-container"
         style={{
           fontSize: "12px",
           fontWeight: 400,
-          padding: "1%",
-          paddingLeft: "17%",
           backgroundColor: "#f5f5f7",
+          margin: "1%",
         }}
       >
         <h6>{"Attributions and Credits"}</h6>
