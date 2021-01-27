@@ -28,8 +28,19 @@
     background: rgba(255,255,255, 0.1);
 }
 
+.topNav {
+    display: none
+}
+
+.topNav a {
+    color: #515154;
+}
+
 @media only screen and (max-width: 768px) {
     .sideNav {
-        display: none;
+        opacity: 0;
+    }
+    .topNav {
+        display:flex
     }
 }
