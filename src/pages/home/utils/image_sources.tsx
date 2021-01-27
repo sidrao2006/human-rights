@@ -1,6 +1,11 @@
 const gDrive = (id: string) => `https://drive.google.com/uc?id=${id}`;
 
 const ImageSources = {
+  logo: {
+    source:
+      "https://cdn.jsdelivr.net/gh/sidrao2006/human-rights@1/icons/192x192.png",
+    alternateText: "Human Rights Logo",
+  },
   what: {
     source:
       "https://www.greenbiz.com/sites/default/files/images/articles/featured/humanrightsprotest.jpg",
