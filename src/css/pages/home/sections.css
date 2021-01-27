@@ -7,6 +7,7 @@
 
 .section-content-container {
     height: inherit;
+    padding-left: 5%;
 }
 
 .section-content-container p {
@@ -15,7 +16,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .sideNav {
-        padding-left: 17%,
+    .section-content-container {
+        padding-left: 17%;
     }
 }
