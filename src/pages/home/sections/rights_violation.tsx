@@ -38,7 +38,7 @@ class RightsViolation extends React.Component implements Section {
             onEnded={() => this.setState({ shouldPlayVideo: false })}
           ></video>
         )}
-        className="light section-content-container"
+        className="light"
       >
         {!this.state.shouldPlayVideo ? (
           <>

@@ -14,7 +14,7 @@ class India extends React.Component implements Section {
       <LazyLoader
         backgroundImageSrc={ImageSources.india.source}
         backgroundImageAlt={ImageSources.india.alternateText}
-        className="light section-content-container"
+        className="light"
       >
         <div id={this.targetId}>
           <h3 className="display-3">{TextSources.india.header}</h3>'{" "}
