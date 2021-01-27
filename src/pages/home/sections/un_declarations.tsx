@@ -26,7 +26,7 @@ class UNDeclarations
         backgroundImageSrc=""
         backgroundImageAlt={ImageSources.unDeclarations.alternateText}
         id="un_declarations"
-        className="dark section-content-container"
+        className="dark"
         backgroundImageStyle={{
           objectFit: "contain",
         }}

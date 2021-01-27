@@ -35,7 +35,7 @@ class Origin extends React.Component implements Section {
             }}
           ></video>
         )}
-        className="light section-content-container"
+        className="light"
       >
         {!this.state.hideText ? (
           <>
