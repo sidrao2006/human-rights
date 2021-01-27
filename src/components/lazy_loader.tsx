@@ -49,10 +49,9 @@ const LazyLoader = (props: React.PropsWithChildren<Props>) => {
         : null}
       <div
         style={{
-          paddingLeft: "17%",
           position: "absolute",
         }}
-        className={props.className}
+        className={props.className + " section-content-container"}
       >
         {props.children}
       </div>

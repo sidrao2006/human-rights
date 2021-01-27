@@ -5,3 +5,7 @@ footer, footer a:link, footer a:visited {
 h6, footer a:hover, footer a:active {
     color: #1d1d1f;
 }
+
+footer img:hover {
+    filter: contrast(0.5);
+}

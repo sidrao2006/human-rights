@@ -15,7 +15,7 @@ class What extends React.Component implements Section {
         backgroundImageSrc={ImageSources.what.source}
         backgroundImageAlt={ImageSources.what.alternateText}
         id="what"
-        className="light section-content-container"
+        className="light"
         lazyLoad={false}
       >
         <div id={this.targetId}>

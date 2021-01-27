@@ -14,7 +14,7 @@ class Why extends React.Component implements Section {
       <LazyLoader
         backgroundImageSrc={ImageSources.why.source}
         backgroundImageAlt={ImageSources.why.alternateText}
-        className="light section-content-container"
+        className="light"
         backgroundImageStyle={{
           filter: "brightness(0.65) blur(1px)",
         }}
