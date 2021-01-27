@@ -3,37 +3,37 @@
   "name": "Human Rights",
   "icons": [
     {
-      "src": "https://cdn.jsdelivr.net/gh/sidrao2006/human-rights@1.0/icons/favicon.ico",
+      "src": "https://cdn.jsdelivr.net/gh/sidrao2006/human-rights@1/icons/favicon.ico",
       "sizes": "48x48 24x24",
       "type": "image/x-icon"
     },
     {
-      "src": "https://cdn.jsdelivr.net/gh/sidrao2006/human-rights@1.0/icons/favicon-16x16.png",
+      "src": "https://cdn.jsdelivr.net/gh/sidrao2006/human-rights@1/icons/favicon-16x16.png",
       "sizes": "16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "https://cdn.jsdelivr.net/gh/sidrao2006/human-rights@1.0/icons/favicon-32x32.png",
+      "src": "https://cdn.jsdelivr.net/gh/sidrao2006/human-rights@1/icons/favicon-32x32.png",
       "sizes": "32x32",
       "type": "image/x-icon"
     },
     {
-      "src": "https://cdn.jsdelivr.net/gh/sidrao2006/human-rights@1.0/icons/192x192.png",
+      "src": "https://cdn.jsdelivr.net/gh/sidrao2006/human-rights@1/icons/192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "https://cdn.jsdelivr.net/gh/sidrao2006/human-rights@1.0/icons/512x512.png",
+      "src": "https://cdn.jsdelivr.net/gh/sidrao2006/human-rights@1/icons/512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "https://cdn.jsdelivr.net/gh/sidrao2006/human-rights@1.0/icons/1024x1024.png",
+      "src": "https://cdn.jsdelivr.net/gh/sidrao2006/human-rights@1/icons/1024x1024.png",
       "sizes": "1024x1024",
       "type": "image/png"
     },
     {
-      "src": "https://cdn.jsdelivr.net/gh/sidrao2006/human-rights@1.0/icons/maskable-1280x1280.png",
+      "src": "https://cdn.jsdelivr.net/gh/sidrao2006/human-rights@1/icons/maskable-1280x1280.png",
       "sizes": "1280x1280",
       "type": "image/png",
       "purpose": "maskable"
