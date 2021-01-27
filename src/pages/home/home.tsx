@@ -97,7 +97,6 @@ class HomePage extends React.Component {
             <NavBar
               targetLabels={this.topNavItems}
               isBsNavBar={true}
-              bsNavStyle={{ background: "rgba(255,255,255,0.8)" }}
               customBsNavElement={buildNavLinks}
               bsNavBrand={
                 <NavbarBrand style={{ padding: "0 1%" }}>
