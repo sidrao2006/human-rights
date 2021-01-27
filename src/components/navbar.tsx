@@ -14,7 +14,6 @@ class NavBar extends React.Component<NavBarProps> {
       <ErrorBoundary>
         <React.Suspense fallback={this.renderLoader()}>
           <CustomizableNavBar
-            bsNavStyle={this.props.bsNavStyle}
             isBsNavBar={this.props.isBsNavBar}
             bsNavBrand={this.props.bsNavBrand}
           >
@@ -45,13 +44,12 @@ class NavBar extends React.Component<NavBarProps> {
 const CustomizableNavBar = (
   props: React.PropsWithChildren<{
     children: JSX.Element[];
-    bsNavStyle?: React.CSSProperties;
     isBsNavBar?: boolean;
     bsNavBrand?: JSX.Element;
   }>
 ) => {
   return props.isBsNavBar ?? false ? (
-    <Navbar style={props.bsNavStyle} expand="lg" className="topNav">
+    <Navbar expand="lg" className="topNav">
       {props.bsNavBrand}
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse>{props.children}</Navbar.Collapse>
