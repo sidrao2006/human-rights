@@ -6,6 +6,7 @@ import HomePage from "./pages/home/home";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 
 import "./index.css";
+import logPWAInstallToAnalytics from "pwa-install-analytics-log";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -16,3 +17,5 @@ ReactDOM.render(
 
 // Learn more about service workers: https://cra.link/PWA
 serviceWorkerRegistration.register();
+
+logPWAInstallToAnalytics();

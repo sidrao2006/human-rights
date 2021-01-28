@@ -39,8 +39,12 @@
       "purpose": "maskable"
     }
   ],
+  "related_applications": [{
+    "platform": "webapp",
+    "url": "https://humanrights.web.app/manifest.json"
+  }],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#ecd9d0",
   "background_color": "#ffffff"
 }
